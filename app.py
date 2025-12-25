@@ -1,5 +1,3 @@
-!pip install transformers torch streamlit
-
 import streamlit as st
 from transformers import pipeline
 
@@ -30,3 +28,4 @@ if st.button("توليد الخطة"):
             plan = generate_learning_plan(topic)
         st.subheader("خطة التعلم الناتجة:")
         st.write(plan)
+
